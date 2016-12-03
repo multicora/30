@@ -1,0 +1,22 @@
+.header {
+  padding-bottom: 7rem;
+
+  .logo {
+    margin-bottom: 3rem;
+  }
+
+  .personal-info {
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+    @media (min-width: $step-2-width) {
+      margin-bottom: 2.5rem;
+    }
+    @media (min-width: $step-3-width) {
+      padding: 0 2.4rem 0 1.2rem;
+    }
+  }
+
+  .mail {
+    color: $accent-color;
+  }
+}

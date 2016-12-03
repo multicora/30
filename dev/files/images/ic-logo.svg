@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="48px" viewBox="0 0 104 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>7F67D6B7-BB44-4676-A255-C33E5D117A54</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M79.3558442,48 C79.3558442,61.26 90.1292108,72 103.393356,72 C116.657501,72 127.430868,61.26 127.430868,48 C127.430868,34.74 116.68751,24 103.393356,24 C90.1292108,24 79.3558442,34.74 79.3558442,48 Z M51.6386371,24.09 L79.2172554,72 L24,72 L51.6386371,24.09 L51.6386371,24.09 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="103.430868" height="48" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Home-screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.400000006">
+        <g id="Mobile-Portrait" transform="translate(-24.000000, -24.000000)" stroke="#BBBBBB" stroke-width="2">
+            <use id="ic_logo" mask="url(#mask-2)" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

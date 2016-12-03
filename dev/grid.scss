@@ -1,0 +1,39 @@
+@for $i from 1 through 12 {
+  .size-1-col-#{$i} {
+    float: left;
+    width: (100 / 12) * $i + %;
+  }
+}
+
+@media (min-width: $step-1-width) {
+  @for $i from 1 through 12 {
+    .size-2-col-#{$i} {
+      float: left;
+      width: (100 / 12) * $i + %;
+    }
+  }
+}
+
+@media (min-width: $step-2-width) {
+  @for $i from 1 through 12 {
+    .size-3-col-#{$i} {
+      float: left;
+      width: (100 / 12) * $i + %;
+    }
+  }
+}
+
+@media (min-width: $step-3-width) {
+  @for $i from 1 through 12 {
+    .size-4-col-#{$i} {
+      float: left;
+      width: (100 / 12) * $i + %;
+    }
+  }
+}
+
+.clear-fix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
