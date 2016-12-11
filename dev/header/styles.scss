@@ -23,5 +23,9 @@
 
   .mail {
     color: $accent-color;
+    cursor: pointer;
+    &:hover {
+      color: $accent-color-hover;
+    }
   }
 }
