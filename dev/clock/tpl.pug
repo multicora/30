@@ -1,0 +1,92 @@
+//- Image list
+mixin watch-face
+  picture.img
+    source(srcset="files/images/clock/ui-01.jpg" media="(max-width: 1024px)")
+    img(
+      src="files/images/clock/ui-01.jpg"
+      srcset="files/images/clock/ui-01@2x.jpg 2x, images/ui-01@3x.jpg 3x")
+  .img
+    img(
+      src="files/images/clock/ui-02.jpg"
+      srcset="files/images/clock/ui-02@2x.jpg 2x, images/ui-02@3x.jpg 3x")
+  .img
+    img(
+      src="files/images/clock/ui-03.jpg"
+      srcset="files/images/clock/ui-03@2x.jpg 2x, images/ui-03@3x.jpg 3x")
+  .img
+    img(
+      src="files/images/clock/ui-04.jpg"
+      srcset="files/images/clock/ui-04@2x.jpg 2x, images/ui-04@3x.jpg 3x")
+  .img
+    img(
+      src="files/images/clock/ui-05.jpg"
+      srcset="files/images/clock/ui-05@2x.jpg 2x, images/ui-05@3x.jpg 3x")
+  .img
+    img(
+      src="files/images/clock/ui-06.jpg"
+      srcset="files/images/clock/ui-06@2x.jpg 2x, images/ui-06@3x.jpg 3x")
+
+//- Image list
+mixin screen-shots
+  picture.img
+    source(
+      srcset="files/images/clock/23-home-one.jpg 1x, files/images/clock/23-home-one@2x.jpg 2x, images/23-home-one@3x.jpg 3x"
+      media="(max-width: 1024px)")
+    img(
+      src="files/images/clock/23-home-one.jpg"
+      srcset="files/images/clock/23-home-one@2x.jpg 2x, images/23-home-one@3x.jpg 3x")
+  picture.img
+    source(
+      srcset="files/images/clock/23-home-one.jpg 1x, files/images/clock/23-home-one@2x.jpg 2x, images/23-home-one@3x.jpg 3x"
+      media="(max-width: 1024px)")
+    img(
+      src="files/images/clock/23-home-one.jpg"
+      srcset="files/images/clock/23-home-one@2x.jpg 2x, images/23-home-one@3x.jpg 3x")
+  picture.img
+    source(
+      srcset="files/images/clock/23-home-one.jpg 1x, files/images/clock/23-home-one@2x.jpg 2x, images/23-home-one@3x.jpg 3x"
+      media="(max-width: 1024px)")
+    img(
+      src="files/images/clock/23-home-one.jpg"
+      srcset="files/images/clock/23-home-one@2x.jpg 2x, images/23-home-one@3x.jpg 3x")
+
+section.project.clock
+  .clear-fix
+    .title.size-2-col-6 Braun Model F concept
+    .description.size-2-col-6 The new line of desktop clocks Braun is based on the simplicity and elegance of the brand. The model is designed considering the style of Braun and comfortable proportions.
+  .clear-fix
+    .size-2-col-6
+      .previews
+        .size-1-col-6
+          img(
+            src="files/images/clock/device-03.jpg"
+            srcset="files/images/clock/device-03@2x.jpg 2x, images/device-03@3x.jpg 3x")
+          .label Side view
+        .size-1-col-6
+          img(
+            src="files/images/clock/device-02.jpg"
+            srcset="files/images/clock/device-02@2x.jpg 2x, images/device-02@3x.jpg 3x")
+          .label Three fourth view
+      .description The body can be made of metal, wood, ceramics and more. So the clock is easy to match any interior.
+    .size-2-col-6
+      .previews.front
+        img(
+          src="files/images/clock/device-01.jpg"
+          srcset="files/images/clock/device-01@2x.jpg 2x, images/device-01@3x.jpg 3x")
+        .label.clear-fix Clock front view
+      .description Classic design is at the heart of its interface. To enhance contrast and improve the visual elements hierarchy its proportions has been slightly modified and dark tape was added to marking. Such interface easily displays your data on the timeline.
+
+  .carousel-container
+    .carousel(id="clock-carousel")
+      +watch-face
+
+  .watch-faces
+    +watch-face
+
+  .description-2.clear-fix
+    .part.size-2-col-6 Any user only needs to enter the access code which is on the product box. Application will automatically select the primary time zone from your phone and show the available information for additional time zones, calendars, alarm clocks that you can also display.
+    .part.size-2-col-6 Device setting and synchronization occurs by phone application.
+
+  .carousel-container.screen-shots
+    .carousel(id="screen-shots-carousel")
+      +screen-shots

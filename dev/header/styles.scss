@@ -8,7 +8,6 @@
   .personal-info {
     box-sizing: border-box;
     margin-bottom: 3rem;
-    max-width: 272px;
     @media (min-width: $step-1-width) {
       max-width: 325px;
     }
