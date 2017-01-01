@@ -3,7 +3,7 @@
     margin-bottom: 4rem;
   }
 
-  .description {
+  .description, .description-2 .part {
     @media (min-width: $step-1-width) {
       max-width: 32.5rem;
     }
@@ -65,13 +65,24 @@
   }
 
   .carousel-container {
-    margin-top: 4rem;
-    @media (min-width: $step-1-width) {
-      display: none;
+    &.watch-face {
+      height: 18.5rem;
+      @media (min-width: $step-1-width) {
+        display: none;
+      }
+    }
+
+    &.screen-shots {
+      height: 34rem;
+      margin-bottom: 5rem;
+    }
+
+    .img {
+      height: inherit;
     }
   }
 
-  .watch-faces {
+  .watch-face.list {
     padding-top: 5rem;
     .img {
       display: inline-block;
@@ -100,24 +111,35 @@
   }
 
   .carousel {
-    left: 50%;
-    position: relative;
-    transform: translate(-50%, 0);
-    width: 70rem;
-
-    .img {
-      height: 18.5rem;
-      padding: 0 25px;
-      width: 18.5rem;
-    }
+    position: absolute;
+    left: 0;
+    width: 100%;
 
     img {
-      height: 100%;
+      width: 100%;
     }
   }
 
-  .carousel-container, .watch-faces {
+  .watch-face {
+    margin-top: 4rem;
     margin-bottom: 7rem;
+
+    .img {
+      width: 18.5rem;
+      @media (max-width: $step-1-width - 1) {
+        padding: 0 25px;
+      }
+    }
+  }
+
+
+  .screen-shots .img {
+    padding: 0 1.5rem;
+    width: 18.5rem;
+
+    img {
+      width: 100%;
+    }
   }
 
   .description-2 {
