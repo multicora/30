@@ -3,22 +3,29 @@ mixin text-1
   .text It was pleasure to work with Vadym on his canvass company. In result we got cool political poster and broshure.
 
 mixin image-1
-  .image.image-1.center
-    picture
-      source(
-        srcset="files/images/election-campaign/1024/picture_01.jpg 1x, files/images/election-campaign/1024/picture_01@2x.jpg 2x"
-        media="(min-width: 1024px)")
-      source(
-        srcset="files/images/election-campaign/Tablet/picture_01.jpg 1x, files/images/election-campaign/Tablet/picture_01@2x.jpg 2x"
-        media="(min-width: 768px)")
-      img(
-        src="files/images/election-campaign/Mobile/picture_01.jpg"
-        srcset="files/images/election-campaign/Mobile/picture_01@2x.jpg 2x")
-    .label.default Poster
+  .image.image-1
+    .center.image-element
+      picture
+        source(
+          srcset="files/images/election-campaign/1280/picture_01.jpg 1x, files/images/election-campaign/1280/picture_01@2x.jpg 2x"
+          media="(min-width: 1280px)")
+        source(
+          srcset="files/images/election-campaign/1024/picture_01.jpg 1x, files/images/election-campaign/1024/picture_01@2x.jpg 2x"
+          media="(min-width: 1024px)")
+        source(
+          srcset="files/images/election-campaign/Tablet/picture_01.jpg 1x, files/images/election-campaign/Tablet/picture_01@2x.jpg 2x"
+          media="(min-width: 768px)")
+        img(
+          src="files/images/election-campaign/Mobile/picture_01.jpg"
+          srcset="files/images/election-campaign/Mobile/picture_01@2x.jpg 2x")
+      .label.default Poster
 
 mixin image-2
   .image.image-2.center
     picture
+      source(
+        srcset="files/images/election-campaign/1280/picture_02.jpg 1x, files/images/election-campaign/1280/picture_02@2x.jpg 2x"
+        media="(min-width: 1280px)")
       source(
         srcset="files/images/election-campaign/1024/picture_02.jpg 1x, files/images/election-campaign/1024/picture_02@2x.jpg 2x"
         media="(min-width: 1024px)")
@@ -34,6 +41,9 @@ mixin image-3
   .image.image-3.center
     picture
       source(
+        srcset="files/images/election-campaign/1280/picture_03.jpg 1x, files/images/election-campaign/1280/picture_03@2x.jpg 2x"
+        media="(min-width: 1280px)")
+      source(
         srcset="files/images/election-campaign/1024/picture_03.jpg 1x, files/images/election-campaign/1024/picture_03@2x.jpg 2x"
         media="(min-width: 1024px)")
       source(
@@ -47,6 +57,9 @@ mixin image-3
 mixin image-4
   .image.image-4.center
     picture
+      source(
+        srcset="files/images/election-campaign/1280/picture_04.jpg 1x, files/images/election-campaign/1280/picture_04@2x.jpg 2x"
+        media="(min-width: 1280px)")
       source(
         srcset="files/images/election-campaign/1024/picture_04.jpg 1x, files/images/election-campaign/1024/picture_04@2x.jpg 2x"
         media="(min-width: 1024px)")

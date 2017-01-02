@@ -14,6 +14,18 @@
     }
   }
 
+  .image-1 img {
+    @media (min-width: $step-3-width) {
+      width: inherit;
+    }
+  }
+
+  .image-element {
+    @media (min-width: $step-3-width) {
+      display: inline-block;
+    }
+  }
+
   .block {
     @media (min-width: $step-1-width) {
       margin: 2rem -1.2rem 0;
