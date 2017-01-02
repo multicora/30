@@ -1,3 +1,5 @@
+//- TODO: move carousels to different template
+
 //- Image list
 mixin watch-face
   picture.img
@@ -36,7 +38,7 @@ mixin screen-shots
       img(
         src="files/images/clock/mobile/Mobile-home-one.jpg"
         srcset="files/images/clock/mobile/Mobile-home-one@2x.jpg 2x")
-    .label Home screen
+    .label.default Home screen
   .img
     picture
       source(
@@ -45,7 +47,7 @@ mixin screen-shots
       img(
         src="files/images/clock/mobile/Mobile-home-one.jpg"
         srcset="files/images/clock/mobile/Mobile-home-one@2x.jpg 2x")
-    .label Home screen
+    .label.default Home screen
   .img
     picture
       source(
@@ -54,7 +56,7 @@ mixin screen-shots
       img(
         src="files/images/clock/mobile/Mobile-home-one.jpg"
         srcset="files/images/clock/mobile/Mobile-home-one@2x.jpg 2x")
-    .label Home screen
+    .label.default Home screen
 
 section.project.clock
   .clear-fix
@@ -66,41 +68,35 @@ section.project.clock
         .size-1-col-6
           picture.img
             source(
-              src="files/images/clock/Mobile/device_03.jpg"
-              srcset="files/images/clock/Mobile/device_03@2x.jpg 2x"
+              srcset="files/images/clock/Mobile/device_03.jpg 1x, files/images/clock/Mobile/device_03@2x.jpg 2x"
               media="(min-width: 1920px)")
             source(
-              src="files/images/clock/Mobile/device_03.jpg"
-              srcset="files/images/clock/Mobile/device_03@2x.jpg 2x"
+              srcset="files/images/clock/Mobile/device_03.jpg 1x, files/images/clock/Mobile/device_03@2x.jpg 2x"
               media="(min-width: 1440px)")
             source(
-              src="files/images/clock/Mobile/device_03.jpg"
-              srcset="files/images/clock/Mobile/device_03@2x.jpg 2x"
+              srcset="files/images/clock/Mobile/device_03.jpg 1x, files/images/clock/Mobile/device_03@2x.jpg 2x"
               media="(min-width: 1280px)")
             source(
-              src="files/images/clock/Mobile/device_03.jpg"
-              srcset="files/images/clock/Mobile/device_03@2x.jpg 2x"
+              srcset="files/images/clock/Mobile/device_03.jpg 1x, files/images/clock/Mobile/device_03@2x.jpg 2x"
               media="(min-width: 1024px)")
             source(
-              src="files/images/clock/Mobile/device_03.jpg"
-              srcset="files/images/clock/Mobile/device_03@2x.jpg 2x"
+              srcset="files/images/clock/Mobile/device_03.jpg 1x, files/images/clock/Mobile/device_03@2x.jpg 2x"
               media="(min-width: 768px)")
             img(
-              src="files/images/clock/Mobile/device_03.jpg"
-              srcset="files/images/clock/Mobile/device_03@2x.jpg 2x")
-          .label Side view
+              srcset="files/images/clock/Mobile/device_03.jpg 1x, files/images/clock/Mobile/device_03@2x.jpg 2x")
+          .label.default Side view
         .size-1-col-6
           img(
             src="files/images/clock/Mobile/device_02.jpg"
             srcset="files/images/clock/Mobile/device_02@2x.jpg 2x")
-          .label Three fourth view
+          .label.default Three fourth view
       .description The body can be made of metal, wood, ceramics and more. So the clock is easy to match any interior.
     .size-2-col-6
       .previews.front
         img(
           src="files/images/clock/Mobile/device_01.jpg"
           srcset="files/images/clock/Mobile/device_01@2x.jpg 2x")
-        .label.clear-fix Clock front view
+        .label.default.clear-fix Clock front view
       .description Classic design is at the heart of its interface. To enhance contrast and improve the visual elements hierarchy its proportions has been slightly modified and dark tape was added to marking. Such interface easily displays your data on the timeline.
 
   .watch-face.carousel-container

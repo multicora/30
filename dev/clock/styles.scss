@@ -41,23 +41,6 @@
     }
   }
 
-  .label {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-    @media (min-width: $step-2-width) {
-      font-size: 1.4rem;
-      margin-bottom: 5rem;
-    }
-    @media (min-width: $step-4-width) {
-      margin-bottom: 6.5rem;
-    }
-    @media (min-width: $step-5-width) {
-      font-size: 1.6rem;
-      margin-bottom: 6.5rem;
-    }
-  }
-
   .front {
     @media (max-width: $step-1-width - 1) {
       text-align: center;
