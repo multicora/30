@@ -9,6 +9,9 @@
 
   .image-1, .image-3 {
     margin-top: 4rem;
+    @media (min-width: $step-2-width) {
+      margin-top: 5rem;
+    }
   }
 
   .block {
