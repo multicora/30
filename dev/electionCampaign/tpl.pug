@@ -1,43 +1,67 @@
-.election-campaign
-  div Election campaign
+//- Moxins
+mixin text-1
+  .text It was pleasure to work with Vadym on his canvass company. In result we got cool political poster and broshure.
+
+mixin image-1
   .image.image-1.center
     picture
-      //- source(
-      //-   srcset="files/images/election-campaign/Mobile/picture_01.jpg 1x, files/images/election-campaign/Mobile/picture_01@2x.jpg 2x"
-      //-   media="(min-width: 768px)")
+      source(
+        srcset="files/images/election-campaign/Tablet/picture_01.jpg 1x, files/images/election-campaign/Tablet/picture_01@2x.jpg 2x"
+        media="(min-width: 768px)")
       img(
         src="files/images/election-campaign/Mobile/picture_01.jpg"
         srcset="files/images/election-campaign/Mobile/picture_01@2x.jpg 2x")
     .label.default Poster
 
-  .image.center
+mixin image-2
+  .image.image-2.center
     picture
-      //- source(
-      //-   srcset="files/images/election-campaign/Mobile/picture_02.jpg 1x, files/images/election-campaign/Mobile/picture_02@2x.jpg 2x"
-      //-   media="(min-width: 768px)")
+      source(
+        srcset="files/images/election-campaign/Tablet/picture_02.jpg 1x, files/images/election-campaign/Tablet/picture_02@2x.jpg 2x"
+        media="(min-width: 768px)")
       img(
         src="files/images/election-campaign/Mobile/picture_02.jpg"
         srcset="files/images/election-campaign/Mobile/picture_02@2x.jpg 2x")
     .label.default.center Social media cover
 
-  .text It was pleasure to work with Vadym on his canvass company. In result we got cool political poster and broshure.
-
+mixin image-3
   .image.image-3.center
     picture
-      //- source(
-      //-   srcset="files/images/election-campaign/Mobile/picture_03.jpg 1x, files/images/election-campaign/Mobile/picture_03@2x.jpg 2x"
-      //-   media="(min-width: 768px)")
+      source(
+        srcset="files/images/election-campaign/Tablet/picture_03.jpg 1x, files/images/election-campaign/Tablet/picture_03@2x.jpg 2x"
+        media="(min-width: 768px)")
       img(
         src="files/images/election-campaign/Mobile/picture_03.jpg"
         srcset="files/images/election-campaign/Mobile/picture_03@2x.jpg 2x")
     .label.default.center Inside part of the broshure
 
-  .image.center
+mixin image-4
+  .image.image-4.center
     picture
-      //- source(
-      //-   srcset="files/images/election-campaign/Mobile/picture_04.jpg 1x, files/images/election-campaign/Mobile/picture_04@2x.jpg 2x"
-      //-   media="(min-width: 768px)")
+      source(
+        srcset="files/images/election-campaign/Tablet/picture_04.jpg 1x, files/images/election-campaign/Tablet/picture_04@2x.jpg 2x"
+        media="(min-width: 768px)")
       img(
         src="files/images/election-campaign/Mobile/picture_04.jpg"
         srcset="files/images/election-campaign/Mobile/picture_04@2x.jpg 2x")
     .label.default.center Outside part of the broshure
+
+//- Markup
+.election-campaign
+  span
+    .size-2-col-6 Election campaign
+    .size-2-col-6.size-0-hide
+      +text-1
+  .block
+    +image-1
+    span.size-0-hide
+      +image-3
+
+  .block
+    +image-2
+
+    .size-min-1-hide
+      +text-1
+      +image-3
+
+    +image-4

@@ -37,3 +37,16 @@
   display: table;
   clear: both;
 }
+
+// Hiding
+@media (min-width: $step-1-width) {
+  .size-min-1-hide {
+    display: none;
+  }
+}
+
+@media (max-width: $step-1-width - 1) {
+  .size-0-hide {
+    display: none;
+  }
+}
