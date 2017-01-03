@@ -4,8 +4,8 @@
     width: (100 / 12) * $i + %;
   }
 
-  .size-1-offset-#{$i} {
-    margin-left: (100 / 12) * $i + %;
+  .size-1-offset-#{$i - 1} {
+    margin-left: (100 / 12) * ($i - 1) + %;
   }
 }
 
@@ -15,10 +15,10 @@
       float: left;
       width: (100 / 12) * $i + %;
     }
-  }
 
-  .size-2-offset-#{$i} {
-    margin-left: (100 / 12) * $i + %;
+    .size-2-offset-#{$i - 1} {
+      margin-left: (100 / 12) * ($i - 1) + %;
+    }
   }
 }
 
@@ -28,10 +28,10 @@
       float: left;
       width: (100 / 12) * $i + %;
     }
-  }
 
-  .size-3-offset-#{$i} {
-    margin-left: (100 / 12) * $i + %;
+    .size-3-offset-#{$i - 1} {
+      margin-left: (100 / 12) * ($i - 1) + %;
+    }
   }
 }
 
@@ -41,10 +41,10 @@
       float: left;
       width: (100 / 12) * $i + %;
     }
-  }
 
-  .size-4-offset-#{$i} {
-    margin-left: (100 / 12) * $i + %;
+    .size-4-offset-#{$i - 1} {
+      margin-left: (100 / 12) * ($i - 1) + %;
+    }
   }
 }
 
