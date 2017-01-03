@@ -3,6 +3,10 @@
     float: left;
     width: (100 / 12) * $i + %;
   }
+
+  .size-1-offset-#{$i} {
+    margin-left: (100 / 12) * $i + %;
+  }
 }
 
 @media (min-width: $step-1-width) {
@@ -11,6 +15,10 @@
       float: left;
       width: (100 / 12) * $i + %;
     }
+  }
+
+  .size-2-offset-#{$i} {
+    margin-left: (100 / 12) * $i + %;
   }
 }
 
@@ -21,6 +29,10 @@
       width: (100 / 12) * $i + %;
     }
   }
+
+  .size-3-offset-#{$i} {
+    margin-left: (100 / 12) * $i + %;
+  }
 }
 
 @media (min-width: $step-3-width) {
@@ -29,6 +41,10 @@
       float: left;
       width: (100 / 12) * $i + %;
     }
+  }
+
+  .size-4-offset-#{$i} {
+    margin-left: (100 / 12) * $i + %;
   }
 }
 
