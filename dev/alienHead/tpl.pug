@@ -12,9 +12,9 @@ mixin image-1
     //- source(
     //-   srcset="files/images/alien-head/1280/alien_head_01.jpg 1x, files/images/alien-head/1280/alien_head_01@2x.jpg 2x"
     //-   media="(min-width: 1280px)")
-    //- source(
-    //-   srcset="files/images/alien-head/1024/alien_head_01.jpg 1x, files/images/alien-head/1024/alien_head_01@2x.jpg 2x"
-    //-   media="(min-width: 1024px)")
+    source(
+      srcset="files/images/alien-head/1024/alien_head_01.jpg 1x, files/images/alien-head/1024/alien_head_01@2x.jpg 2x"
+      media="(min-width: 1024px)")
     source(
       srcset="files/images/alien-head/Tablet/alien_head_01.jpg 1x, files/images/alien-head/Tablet/alien_head_01@2x.jpg 2x"
       media="(min-width: 768px)")
@@ -33,9 +33,9 @@ mixin image-2
     //- source(
     //-   srcset="files/images/alien-head/1280/alien_head_02.jpg 1x, files/images/alien-head/1280/alien_head_02@2x.jpg 2x"
     //-   media="(min-width: 1280px)")
-    //- source(
-    //-   srcset="files/images/alien-head/1024/alien_head_02.jpg 1x, files/images/alien-head/1024/alien_head_02@2x.jpg 2x"
-    //-   media="(min-width: 1024px)")
+    source(
+      srcset="files/images/alien-head/1024/alien_head_02.jpg 1x, files/images/alien-head/1024/alien_head_02@2x.jpg 2x"
+      media="(min-width: 1024px)")
     source(
       srcset="files/images/alien-head/Tablet/alien_head_02.jpg 1x, files/images/alien-head/Tablet/alien_head_02@2x.jpg 2x"
       media="(min-width: 768px)")
@@ -54,9 +54,9 @@ mixin image-3
     //- source(
     //-   srcset="files/images/alien-head/1280/alien_head_03.jpg 1x, files/images/alien-head/1280/alien_head_03@2x.jpg 2x"
     //-   media="(min-width: 1280px)")
-    //- source(
-    //-   srcset="files/images/alien-head/1024/alien_head_03.jpg 1x, files/images/alien-head/1024/alien_head_03@2x.jpg 2x"
-    //-   media="(min-width: 1024px)")
+    source(
+      srcset="files/images/alien-head/1024/alien_head_03.jpg 1x, files/images/alien-head/1024/alien_head_03@2x.jpg 2x"
+      media="(min-width: 1024px)")
     source(
       srcset="files/images/alien-head/Tablet/alien_head_03.jpg 1x, files/images/alien-head/Tablet/alien_head_03@2x.jpg 2x"
       media="(min-width: 768px)")
@@ -75,9 +75,9 @@ mixin image-4
     //- source(
     //-   srcset="files/images/alien-head/1280/alien_head_04.jpg 1x, files/images/alien-head/1280/alien_head_04@2x.jpg 2x"
     //-   media="(min-width: 1280px)")
-    //- source(
-    //-   srcset="files/images/alien-head/1024/alien_head_04.jpg 1x, files/images/alien-head/1024/alien_head_04@2x.jpg 2x"
-    //-   media="(min-width: 1024px)")
+    source(
+      srcset="files/images/alien-head/1024/alien_head_04.jpg 1x, files/images/alien-head/1024/alien_head_04@2x.jpg 2x"
+      media="(min-width: 1024px)")
     source(
       srcset="files/images/alien-head/Tablet/alien_head_04.jpg 1x, files/images/alien-head/Tablet/alien_head_04@2x.jpg 2x"
       media="(min-width: 768px)")
@@ -96,9 +96,9 @@ mixin image-5
     //- source(
     //-   srcset="files/images/alien-head/1280/alien_head_05.jpg 1x, files/images/alien-head/1280/alien_head_05@2x.jpg 2x"
     //-   media="(min-width: 1280px)")
-    //- source(
-    //-   srcset="files/images/alien-head/1024/alien_head_05.jpg 1x, files/images/alien-head/1024/alien_head_05@2x.jpg 2x"
-    //-   media="(min-width: 1024px)")
+    source(
+      srcset="files/images/alien-head/1024/alien_head_05.jpg 1x, files/images/alien-head/1024/alien_head_05@2x.jpg 2x"
+      media="(min-width: 1024px)")
     source(
       srcset="files/images/alien-head/Tablet/alien_head_05.jpg 1x, files/images/alien-head/Tablet/alien_head_05@2x.jpg 2x"
       media="(min-width: 768px)")
@@ -113,19 +113,19 @@ mixin image-5
     .size-0-hide.size-2-col-6
       +text
   .heades.clear-fix.size-2-col-6
-    .image.size-1-col-6
+    .image.size-1-col-6.size-3-col-4
       +image-1
-    .image.size-1-col-6
+    .image.size-1-col-6.size-3-col-4
       +image-2
-    .image.size-0-hide.size-1-col-6.size-2-offset-3
+    .image.size-0-hide.size-1-col-6.size-2-offset-3.size-3-col-4.size-3-offset-8
       +image-4
   .size-min-1-hide
     +text
 
   .heades.clear-fix.size-2-col-6
-    .image.size-1-col-6.size-2-col-6.size-2-offset-6
+    .image.size-1-col-6.size-2-col-6.size-2-offset-6.size-3-col-4.size-3-offset-0
       +image-3
     .image.size-1-col-6.size-min-1-hide
       +image-4
-    .picture-5.image.size-1-col-6.size-1-offset-3.size-2-offset-0
+    .picture-5.image.size-1-col-6.size-1-offset-3.size-2-offset-0.size-3-col-4.size-3-offset-8
       +image-5
